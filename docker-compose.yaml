@@ -1,0 +1,14 @@
+version: '3'
+services:
+  sbs:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "5555:5555"
+    networks:
+      - network
+    restart: always
+networks:
+    network:
+        driver: bridge
