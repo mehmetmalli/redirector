@@ -8,7 +8,7 @@ Uses [`express`](https://expressjs.com/) and [`Realm`](https://realm.io).
 ## How do I use it ?
 Send a `POST` request to `/create` endpoint with the body below to create a new redirect.
 
-```json
+```js
 {
   "key": "me", // The key to use for redirection (https://<baseURL>/<key>)
   "target": "https://mehmetmalli.com.tr" // The target URL for redirection
